@@ -5,19 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .hover-card:hover {
+            transform: scale(1.05); /* Slight zoom effect */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="row mt-5 mb-5">
-            <div class="col mt-5 mb-5">
-                <h1 class="text-decoration-underline mb-4"><span> Technical Support</span></h1>
-                <h6 class="mx-2">Contact No : 98XXXXXXXX</h6>
-                <h6 class="mx-2">Email Id:  <a href="/query">eisikarajput228@gmail.com</a></h6>
-                <a href=""></a>
+            <h1 class="text-center mb-5 mt-5" style="font-weight: 400; font-size: 60px;">Hi, How can we help you?</h1>
+            <div class="col-md-4 mb-5">
+                <div class="card hover-card mt-5 mb-5" style="width: 100%;">
+                  <img class="card-img-top" src="/media/query.jpeg" alt="Engineering Physics" />
+                  <div class="card-body">
+                    <h5 class="card-title">Ask Your Query</h5>
+                    <p class="card-text">
+                        If you have any query please fill the Query form . 
+                    </p>
+                    <a href="/query" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Go to Query Form</a>
+                  </div>
+                </div>
             </div>
-            <div class="col"></div>
+            <div class="col-md-4 mb-5">
+                <div class="card hover-card mt-5 mb-5" style="width: 100%;">
+                  <img class="card-img-top" src="/media/help.webp" alt="Get Help from here" />
+                  <div class="card-body">
+                    <h5 class="card-title">Get Help</h5>
+                    If you need any help then go to help page
+                    <p class="card-text">
+                    </p>
+                    <a href="/query" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Get Help</a>
+                  </div>
+                </div>
+            </div>  
+            <div class="col-md-4 mb-5">
+                <div class="card hover-card mt-5 mb-5" style="width: 100%;">
+                  <img class="card-img-top" src="/media/issueResolved.png" alt="Issue Resolved" />
+                  <div class="card-body">
+                    <h5 class="card-title">Issue Resolved</h5>
+                    <p class="card-text">
+                        We are happy to resolve your issues.
+                    </p>
+                    <a href="/about" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Learn More</a>
+                  </div>
+                </div>
+              </div>  
         </div>
     </div>
 </body>
 </html>
+
 <%- include('./base/footer') %>
