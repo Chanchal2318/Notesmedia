@@ -1,0 +1,202 @@
+<%- include('./base/header') %>
+
+<style>
+  /* Custom styles for the cards */
+  .hover-card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .hover-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  }
+
+  /* Ensuring all cards are of the same size */
+  .card {
+    height: 100%; /* Ensure the card stretches to full height */
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card img {
+    height: 180px; /* Set uniform height for all images */
+    width: 100%; /* Make images fit the full width of the card */
+    object-fit: contain; /* Maintain the aspect ratio, and fit the image inside */
+  }
+
+  .card-title {
+    text-align: center;
+  }
+
+  /* Container padding for better visual spacing */
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+</style>
+
+<div class="container mt-5 mb-5">
+  <h1 class="fs-1 text-center">Semester 1 Notes</h1>
+  <div class="row mb-5">
+    <div class="col-md-4 mb-5">
+      <div class="card hover-card mt-5 mb-5" style="width: 100%;">
+        <img class="card-img-top" src="/media/engineering physics.png" alt="Engineering Physics" />
+        <div class="card-body">
+          <h5 class="card-title">Engineering Physics</h5>
+          <p class="card-text">
+            It is a branch of study that applies the principles of physics to solve complex engineering problems.
+          </p>
+          <a href="#" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Download</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card hover-card mt-5 mb-5" style="width: 100%;">
+        <img class="card-img-top" src="/media/Maths.png" alt="Engineering Mathematics 1" />
+        <div class="card-body">
+          <h5 class="card-title">Engineering Mathematics 1</h5>
+          <p class="card-text">
+            It is the application of mathematical methods and techniques to solve practical engineering problems and analyze systems in various engineering fields.
+          </p>
+          <a href="#" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Download</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card hover-card mt-5 mb-5" style="width: 100%;">
+        <img class="card-img-top" src="/media/electrical.png" alt="Fundamentals of Electrical Engineering" />
+        <div class="card-body">
+          <h5 class="card-title">Fundamentals of Electrical Engineering</h5>
+          <p class="card-text">
+            It is the study and application of electrical systems, circuits, and devices to design, develop, and maintain electrical and electronic equipment.
+          </p>
+          <a href="#" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-md-4 mb-5">
+      <div class="card hover-card mt-5 mb-5" style="width: 100%;">
+        <img class="card-img-top" src="/media/coding1.png" alt="Programming for Problem Solving" />
+        <div class="card-body">
+          <h5 class="card-title">Programming for Problem Solving</h5>
+          <p class="card-text">
+            Comprehensive Computer Science Engineering notes tailored for your academic success.
+          </p>
+          <a href="#" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Download</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card hover-card mt-5 mb-5" style="width: 100%;">
+        <img class="card-img-top" src="/media/environment.png" alt="Environment and Ecology" />
+        <div class="card-body">
+          <h5 class="card-title">Environment and Ecology</h5>
+          <p class="card-text">
+            Comprehensive Environmental Engineering notes for your academic success.
+          </p>
+          <a href="#" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Download</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card hover-card mt-5 mb-5" style="width: 100%;">
+        <img class="card-img-top" src="/media/chemistry.png" alt="Soft Skills" />
+        <div class="card-body">
+          <h5 class="card-title">Soft Skills</h5>
+          <p class="card-text">
+            Comprehensive Soft Skills notes tailored for your academic success.
+          </p>
+          <a href="#" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5 mb-5">
+  <h1 class="fs-1 text-center">Semester 2 Notes</h1>
+  <div class="row mb-5">
+    <div class="col-md-4 mb-5">
+      <div class="card hover-card mt-5 mb-5" style="width: 100%;">
+        <img class="card-img-top" src="/media/chemistry.png" alt="Engineering Chemistry" />
+        <div class="card-body">
+          <h5 class="card-title">Engineering Chemistry</h5>
+          <p class="card-text">
+            Comprehensive Engineering Chemistry notes tailored for your academic success.
+          </p>
+          <a href="#" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Download</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card hover-card mt-5 mb-5" style="width: 100%;">
+        <img class="card-img-top" src="/media/Maths.png" alt="Engineering Mathematics 2" />
+        <div class="card-body">
+          <h5 class="card-title">Engineering Mathematics 2</h5>
+          <p class="card-text">
+            Comprehensive Mathematics notes tailored for your academic success.
+          </p>
+          <a href="#" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Download</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card hover-card mt-5 mb-5" style="width: 100%;">
+        <img class="card-img-top" src="/media/mechanical.png" alt="Mechanical Engineering" />
+        <div class="card-body">
+          <h5 class="card-title">Mechanical Engineering</h5>
+          <p class="card-text">
+            Comprehensive Mechanical Engineering notes tailored for your academic success.
+          </p>
+          <a href="#" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Download</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card hover-card mt-5 mb-5" style="width: 100%;">
+        <img class="card-img-top" src="/media/electronics.png" alt="Engineering Electronics" />
+        <div class="card-body">
+          <h5 class="card-title">Fundamentals of Electronice Engineering</h5>
+          <p class="card-text">
+            Comprehensive Engineering Chemistry notes tailored for your academic success.
+          </p>
+          <a href="#" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Download</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card hover-card mt-5 mb-5" style="width: 100%;">
+        <img class="card-img-top" src="/media/workshop.png" alt="Workshop Lab" />
+        <div class="card-body">
+          <h5 class="card-title">Workshop Lab</h5>
+          <p class="card-text">
+            Comprehensive Engineering Chemistry notes tailored for your academic success.
+          </p>
+          <a href="#" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Download</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card hover-card mt-5 mb-5" style="width: 100%;">
+        <img class="card-img-top" src="/media/drawing.png" alt="Engineering Drawing" />
+        <div class="card-body">
+          <h5 class="card-title">Engineering Drawing</h5>
+          <p class="card-text">
+            Comprehensive Engineering Chemistry notes tailored for your academic success.
+          </p>
+          <a href="#" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('./base/footer') %>

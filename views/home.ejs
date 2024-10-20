@@ -1,0 +1,133 @@
+<%- include('./base/header') %>
+<style>
+  /* Custom styles for the cards */
+  .hover-card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .hover-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  }
+
+  /* Ensuring all cards are of the same size */
+  .card {
+    height: 100%; /* Ensure the card stretches to full height */
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card img {
+    height: 180px; /* Set uniform height for all images */
+    width: 100%; /* Make images fit the full width of the card */
+    object-fit: contain; /* Maintain the aspect ratio, and fit the image inside */
+  }
+
+  .card-title {
+    text-align: center;
+  }
+
+  /* Container padding for better visual spacing */
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+</style>
+
+<div class="container mt-5 mb-5">
+  <div class="row  mb-5">
+    <h1 class="fs-1 text-center" >Study Smart with NotesMedia</h1>
+    <p class="text-center mt-4 mb-4 fs-5">
+      Welcome to NotesMedia, your one-stop destination for all academic resources! We are dedicated to providing
+      high-quality notes and study materials for students across various fields. With a focus on simplifying complex
+      concepts and making learning accessible, we ensure that you have the right resources to excel in your academic
+      journey. Whether you're preparing for exams or looking to enhance your understanding of subjects, NotesMedia is
+      here to support your success. Join us and explore a world of knowledge tailored to meet your educational needs.
+    </p>
+    <!-- Card for each department -->
+    <div class="col-md-4 mb-5">
+      <div class="card hover-card mt-5 mb-5" style="width: 100%;">
+        <img class="card-img-top" src="/media/civil.jpg" alt="Civil Department Image" />
+        <div class="card-body">
+          <h5 class="card-title">Civil Department</h5>
+          <p class="card-text">
+            Access comprehensive Civil Engineering notes tailored for your academic success right here at NotesMedia.
+          </p>
+          <a href="/civil/sem" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Get Notes</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card hover-card mt-5 mb-5" style="width: 100%;">
+        <img class="card-img-top" src="/media/mechanical.jpg" alt="Mechanical Department Image" />
+        <div class="card-body">
+          <h5 class="card-title">Mechanical Department</h5>
+          <p class="card-text">
+            Access comprehensive Mechanical Engineering notes tailored for your academic success right here at NotesMedia.
+          </p>
+          <a href="/mechanical" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Get Notes</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card hover-card mt-5 mb-5" style="width: 100%;">
+        <img class="card-img-top" src="/media/computer.jpg" alt="Computer Science Department Image" />
+        <div class="card-body">
+          <h5 class="card-title">Computer Science Department</h5>
+          <p class="card-text">
+            Access comprehensive Computer Science Engineering notes tailored for your academic success right here at
+            NotesMedia.
+          </p>
+          <a href="/computerscience" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Get Notes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second row of cards -->
+  <div class="row mb-5">
+    <div class="col-md-4 mb-5">
+      <div class="card hover-card" style="width: 100%;">
+        <img class="card-img-top" src="/media/electrical.jpg" alt="Electrical Department Image" />
+        <div class="card-body">
+          <h5 class="card-title">Electrical Department</h5>
+          <p class="card-text">
+            Access comprehensive Electrical Engineering notes tailored for your academic success right here at NotesMedia.
+          </p>
+          <a href="/electrical" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Get Notes</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card hover-card" style="width: 100%;">
+        <img class="card-img-top" src="/media/questionpaper.jpg" alt="Question Papers Image" />
+        <div class="card-body">
+          <h5 class="card-title">Question Papers</h5>
+          <p class="card-text">
+            Access comprehensive question papers for various subjects and semesters tailored for your academic success.
+          </p>
+          <a href="/questionpapers" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Get Notes</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card hover-card" style="width: 100%;">
+        <img class="card-img-top" src="/media/dpp.jpg" alt="DPPs Image" />
+        <div class="card-body">
+          <h5 class="card-title">DPPs</h5>
+          <p class="card-text">
+            Access comprehensive Daily Practice Problems tailored for your academic success right here at NotesMedia.
+          </p>
+          <a href="/dpp" class="btn" style="background-color: #6f4ab3; color: #ffffff; border: none;">Get Notes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('./base/footer') %>
+

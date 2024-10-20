@@ -1,0 +1,123 @@
+<%- include('./base/header.ejs') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .review-card {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    .star-rating {
+      color: #ffbb33;
+    }
+    .review-container {
+      margin-top: 50px;
+      padding-bottom: 50px; /* Added space between the content and footer */
+    }
+    .logo-container {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .header-space {
+      margin-top: 20px;
+    }
+    .write-review-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Space (Spacing between header and main content) -->
+  <div class="header-space"></div>
+
+  <!-- Write Review Button -->
+  <div class="write-review-btn">
+    <a href="#" class="btn btn-primary">Write a Review</a>
+  </div>
+
+  <!-- Container -->
+  <div class="container review-container">
+    <!-- Logo Section -->
+    <!-- <div class="logo-container">
+      <img src="https://via.placeholder.com/200x50?text=Charley+Grey+Logo" alt="Charley Grey Logo">
+    </div> -->
+
+    <!-- Review Section -->
+    <div class="row justify-content-center">
+      <!-- Single Review Card -->
+      <div class="col-md-8 mb-4">
+        <div class="card review-card">
+          <div class="card-body">
+            <h5 class="card-title">Charley Grey</h5>
+            <h6 class="text-muted">9748 Lantern Rd, Fishers, IN</h6>
+            <div class="star-rating">
+              <span class="h4">5.0</span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <small class="text-muted">(16 reviews)</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reviews -->
+    <div class="row justify-content-center">
+      <!-- Single Review -->
+      <div class="col-md-8 mb-4">
+        <div class="card review-card">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-2">
+              <div class="me-3">
+                <img src="https://via.placeholder.com/50" class="rounded-circle" alt="Reviewer Image">
+              </div>
+              <div>
+                <h6 class="mb-0">Mitch Olson</h6>
+                <small class="text-muted">2 weeks ago</small>
+              </div>
+            </div>
+            <p class="card-text">If you are looking to have a new website created or revamped then I would highly recommend Charley Grey. They bring a vast knowledge of innovative ideas, and creative solutions while never losing sight of the customer's vision. Courtney and the team are excellent!</p>
+            <p class="mb-0"><strong>Response from the owner:</strong> Thank you for the great review, Mitch! We look forward to managing your site and watching you grow for many years to come. Cheers to your success!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Another Review -->
+      <div class="col-md-8 mb-4">
+        <div class="card review-card">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-2">
+              <div class="me-3">
+                <img src="https://via.placeholder.com/50" class="rounded-circle" alt="Reviewer Image">
+              </div>
+              <div>
+                <h6 class="mb-0">James Elbrecht</h6>
+                <small class="text-muted">1 week ago</small>
+              </div>
+            </div>
+            <p class="card-text">Since using Charley Grey, we have had a great response in our rankings in online searches. They also did a new website for us which had an amazing response and looks fantastic. They are a fun, creative team to work with!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+<%- include('./base/footer.ejs') %>

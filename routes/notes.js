@@ -1,0 +1,89 @@
+const express = require("express");
+const router = express.Router();
+const notescontroller = require('../controller/notescontroller');
+router.use(express.urlencoded({extended : false}));
+router.get('/home',(req,res)=>{
+    res.render('home');
+})
+router.get('/about',(req,res)=>{
+    res.render('about');
+})
+router.get('/signup',(req,res)=>{
+    res.render('signup');
+})
+router.get('/',(req,res)=>{
+    res.render('login');
+})
+router.get('/support',(req,res)=>{
+    res.render('support');
+})
+router.get('/civil',(req,res)=>{
+    res.render('civil');
+})
+router.get('/computerscience',(req,res)=>{
+    res.render('computerscience');
+})
+// router.get('/contact',(req,res)=>{
+//     res.render('contact');
+// })
+router.get('/electrical',(req,res)=>{
+    res.render('electrical');
+})
+router.get('/mechanical',(req,res)=>{
+    res.render('mechanical');
+})
+router.get('/civil/sem',(req,res)=>{
+    res.render('civil');
+})
+router.get('/electrical/sem',(req,res)=>{
+    res.render('electrical');
+})
+router.get('/mechanical/sem',(req,res)=>{
+    res.render('mechanical');
+})
+router.get('/computerscience/sem',(req,res)=>{
+    res.render('computerscience');
+})
+router.get('/query',(req,res)=>{
+    res.render('query');
+})
+router.get('/firstyear',(req,res)=>{
+    res.render('firstyear');
+})
+router.get('/civil/secondyear',(req,res)=>{
+    res.render('secondyearCivil');
+})
+router.get('/civil/thirdyear',(req,res)=>{
+    res.render('thirdyearCivil');
+})
+router.get('/civil/fourthyear',(req,res)=>{
+    res.render('fourthyearCivil');
+})
+router.get('/computer/secondyear',(req,res)=>{
+    res.render('secondyearComputer');
+})
+router.get('/computer/thirdyear',(req,res)=>{
+    res.render('thirdyearComputer');
+})
+router.get('/computer/fourthyear',(req,res)=>{
+    res.render('fourthyearComputer');
+})
+router.get('/mechanical/secondyear',(req,res)=>{
+    res.render('secondyearMechanical');
+})
+router.get('/mechanical/thirdyear',(req,res)=>{
+    res.render('thirdyearMechanical');
+})
+router.get('/mechanical/fourthyear',(req,res)=>{
+    res.render('fourthyearMechanical');
+})
+router.get('/electrical/secondyear',(req,res)=>{
+    res.render('secondyearElectrical');
+})
+router.get('/electrical/thirdyear',(req,res)=>{
+    res.render('thirdyearElectrical');
+})
+router.get('/electrical/fourthyear',(req,res)=>{
+    res.render('fourthyearElectrical');
+})
+module.exports = router

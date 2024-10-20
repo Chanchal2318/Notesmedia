@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #6f4ab3;
+            font-family: Arial, sans-serif;
+        }
+
+        .contact-form {
+            background: #fff;
+            padding: 30px;
+            margin-top: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-icon {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-icon svg {
+            width: 70px;
+            height: 70px;
+            color: #6f4ab3;
+        }
+
+        .btn-custom {
+            background-color: #6f4ab3;
+            color: white;
+        }
+
+        .btn-custom:hover {
+            background-color: #563d8b;
+        }
+
+        .header-text {
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Text -->
+    <div class="container">
+        <h1 class="header-text">Get in Touch</h1>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="container d-flex justify-content-center">
+        <div class="col-md-6 contact-form">
+            <!-- Contact Icon -->
+            <div class="contact-icon">
+                <!-- You can replace with an SVG or any image of an envelope here -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 12.713L.015 3.007C.11 2.45.621 2 1.229 2h21.542c.608 0 1.118.45 1.213 1.007L12 12.713z" />
+                    <path d="M12 14.73L.021 4.02C.008 4.013 0 4.005 0 4v14.142A1.87 1.87 0 001.87 20h20.26A1.87 1.87 0 0024 18.142V4c0 .005-.008.013-.021.02L12 14.73z" />
+                </svg>
+            </div>
+
+            <!-- Contact Form -->
+            <form action="add/contact" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" name="Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Type your message" name="message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom btn-block">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
