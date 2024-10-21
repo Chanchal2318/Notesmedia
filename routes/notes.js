@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const notescontroller = require('../controller/notescontroller');
 router.use(express.urlencoded({extended : false}));
-router.get('/home',(req,res)=>{
+router.get('/',(req,res)=>{
     res.render('home');
 })
 router.get('/about',(req,res)=>{
